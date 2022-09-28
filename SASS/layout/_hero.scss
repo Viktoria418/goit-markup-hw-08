@@ -1,0 +1,96 @@
+.hero {
+	background-color: var(--background-color-footer);
+	color: var(--color-text-darkbox);
+	text-align: center;
+	padding: 118px 0;
+
+@media screen and (min-width: 1200px){
+		padding: 200px 0;
+	
+}
+
+	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+		url("../images/hero/hero-bg-mobile.jpg");
+	@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+		screen and (min-resolution: 192dpi) and (max-width: 767px),
+		screen and (min-resolution: 2dppx) and (max-width: 767px) {
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url("../images/hero/hero-bg-mobile@2x.jpg");
+	}
+
+	/* 
+	768px +
+	*/
+	@media screen and (min-width: 768px) {
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url("../images/hero/hero-bg-tablet.jpg");
+	}
+
+	/* 
+	screen
+	2x +
+	768px +
+	*/
+	@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+		screen and (min-resolution: 192dpi) and (min-width: 768px),
+		screen and (min-resolution: 2dppx) and (min-width: 768px) {
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-bg-tablet@2x.jpg");
+	}
+
+	/* 
+	1200px +
+	*/
+	@media screen and (min-width: 1200px) {
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url("../images/hero/hero-bg-desktop.jpg");
+	}
+
+	/* 
+	2x +
+	1200px +
+	screen
+	*/
+	@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+		screen and (min-resolution: 192dpi) and (min-width: 1200px),
+		screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url("../images/hero/hero-bg-desktop@2x.jpg");
+	}
+
+	// background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Img.jpg);
+	background-color: #c4c4c4;
+	background-size: cover;
+	max-width: 1600px;
+	margin-right: auto;
+	margin-left: auto;
+
+	&__title {
+		font-weight: 900;
+
+		font-size: 26px;
+		line-height: 1.62;
+		width: 100%;
+		@media screen and (min-width: 480px) {
+			width: 360px;
+			
+		}
+
+		@media screen and (min-width: 1200px) {
+			font-size: 44px;
+			line-height: 1.36;
+			width: 696px;
+		}
+
+		text-align: center;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&__btn {
+		margin-top: 30px;
+		padding: 10px 32px;
+
+		
+}
+}

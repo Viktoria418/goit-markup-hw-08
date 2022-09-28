@@ -1,0 +1,22 @@
+.title {
+    color: var(--color-title);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.section__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 0;
+    color: var(--color-title);
+
+    @media screen and (min-width:1200px) {
+font-size: 36px;
+}
+
+}

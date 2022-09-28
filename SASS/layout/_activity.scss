@@ -1,0 +1,34 @@
+
+	.activity {
+		display: none;
+	}
+
+@media screen and (min-width: 1200px) {
+	.activity {
+		display: block ;
+		padding-top: 0;
+		&__list {
+			display: flex;
+			gap: 30px;
+		}
+
+		&__item {
+			position: relative;
+		}
+
+		&__title {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 70px;
+			background: rgba(47, 48, 58, 0.8);
+			font-size: 14px;
+			line-height: 1.14;
+			text-align: center;
+			text-transform: uppercase;
+			color: var(--color-text-darkbox);
+			padding-top: 27px;
+			padding-bottom: 27px;
+		}
+	}
+}
