@@ -29,7 +29,7 @@
 						<li class="site-nav-item"><a class="site-nav-link link" href="">Контакти</a></li>
 					</ul>
 				</nav>
-				<button type="button" class="menu-open">
+				<button type="button" class="menu-open js-open-menu">
 					<svg class="icon-menu" width="40px" height="40px">
 						<use href="./images/icons.svg.svg#icon-menu"></use>
 					</svg>
@@ -51,6 +51,36 @@
 						</a>
 					</li>
 				</ul>
+			</div>
+			<div class="mobile-menu js-menu-container">
+				<div class="mobile-menu-container">
+					<ul class="nav-mobile-menu list">
+						<button class="mobile-menu_close-btn js-close-menu">
+							<svg class="mobile-menu_close-icon" width="18px" height="18px">
+								<use href="./images/icons.svg.svg#icon-close"></use>
+							</svg>
+						</button>
+						<li class="item-nav-mobile-menu"><a class="link-nav-mobile-menu link" href="">Студія</a></li>
+						<li class="item-nav-mobile-menu"><a class="link-nav-mobile-menu link" href="">Портфоліо</a></li>
+						<li class="item-nav-mobile-menu"><a class="link-nav-mobile-menu link" href="">Контакти</a></li>
+					</ul>
+					<ul class="contacts-mobile-menu list">
+						<li class="item-contacts-mobile-menu-tel"
+							><a class="link-contacts-mobile-menu link" href="">+38 096 111 11 11</a></li
+						>
+						<li class="item-contacts-mobile-menu-mail"
+							><a class="link-contacts-mobile link" href=""></a>info@devstudio.com</li
+						>
+					</ul>
+					<ul class="social-menu-mobile list">
+						<li class="item-social-menu-mobile"
+							><a class="link-social-menu-mobile link" href="http://">Instagram</a></li
+						>
+						<li class="item-social-menu-mobile"><a class="link-social-menu-mobile link" href="http://">Twitter</a></li>
+						<li class="item-social-menu-mobile"><a class="link-social-menu-mobile link" href="http://">Facebook</a></li>
+						<li class="item-social-menu-mobile"><a class="link-social-menu-mobile link" href="http://">LinkedIn</a></li>
+					</ul>
+				</div>
 			</div>
 		</header>
 		<main>
@@ -694,5 +724,6 @@
 			</div>
 		</div>
 		<script src="./js/modal.js"></script>
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>

@@ -1,19 +1,20 @@
 @import "./utils/variables" ;
-// @import "./utils/visually-hidden.scss";
+@import "./utils/visually-hidden.scss";
 
 @import "./base/common" ;
 @import "./base/section" ;
 @import "./base/container" ;
 
-// @import "./components/modal-btn" ;
+@import "./components/modal-btn" ;
 @import "./components/title" ;
 @import "./components/logo" ;
 
-// @import "./components/blackdrop" ;
+@import "./components/blackdrop" ;
 @import "./components/btn" ;
 // @import "./components/modal-form";
-// @import "./components/modal" ;
+@import "./components/modal" ;
 @import "./components/social";
+@import "./components/mobille-menu";
 
 
 @import "./layout/header";
@@ -21,8 +22,8 @@
 @import "./layout/preference";
 @import "./layout/activity";
 @import "./layout/team";
-// @import "./layout/clients";
-// @import "./layout/portfolio";
+@import "./layout/clients";
+@import "./layout/portfolio";
 // @import "./layout/footer";
 
 

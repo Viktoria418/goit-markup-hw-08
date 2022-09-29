@@ -1,110 +1,142 @@
 .portfolio-btn {
-    cursor: pointer;
-    background-color: var(--background-portfolio-btn);
-    color: var(--color-portfolio-btn);
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: calc(26 / 15);
+	cursor: pointer;
+	background-color: var(--background-portfolio-btn);
+	color: var(--color-portfolio-btn);
+	font-family: inherit;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: calc(26 / 15);
 }
 
 .page-prtfolio {
-    margin-bottom: 94px;
-    margin-top: 94px;
+	margin-bottom: 94px;
+	margin-top: 94px;
 }
 .portf-pic {
-    width: 370px;
+	// width: 370px;
+    width: 100%;
+        max-width: 450px;
+    
+        // width: calc((100% - 30px) / 2);
+    
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 30px) / 2);
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 60px) / 3);
+        }
 }
 
 .portf-link {
-    display: block;
-    transition: box-shadow var(--transition-animation);
-
+	display: flex;
+    flex-direction: column;
+	transition: box-shadow var(--transition-animation);
+    height: 100%;
+ 
 }
 
 .portf-link-wrapper {
-    position: relative;
-    overflow: hidden;
+	position: relative;
+	overflow: hidden;
 }
 
 .overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: rgba(33, 150, 243, 0.9);
-    color: #ffffff;
-    padding: 63px 24px;
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    transform: translateY(100%);
-    transition: transform var(--transition-animation);
-
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: rgba(33, 150, 243, 0.9);
+	color: #ffffff;
+	padding: 63px 24px;
+	font-size: 18px;
+	line-height: 1.56;
+	letter-spacing: 0.03em;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	transform: translateY(100%);
+	transition: transform var(--transition-animation);
 }
 
 .portf-link:hover .overlay,
 .portf-link:focus .overlay {
-    transform: translateY(0);
+	transform: translateY(0);
 }
 
 .portf-link:hover,
 .portf-link:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-btn {
-    padding: 6px 22px;
-    height: 38px;
-    border: none;
-    align-items: center;
-    border-radius: 4px;
-    transition: color var(--transition-animation), background-color var(--transition-animation), box-shadow var(--transition-animation);
+	padding: 6px 22px;
+	height: 38px;
+	border: none;
+	align-items: center;
+	border-radius: 4px;
+	transition: color var(--transition-animation), background-color var(--transition-animation),
+		box-shadow var(--transition-animation);
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-    background-color: var(--color-accent);
-    color: var(--color-text-darkbox);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-
+	background-color: var(--color-accent);
+	color: var(--color-text-darkbox);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
 .products-items {
-    background-color: var(--background-color-portfolio);
-    color: var(--color-portfolio-btn);
-    padding: 20px 24px;
-    border: 1px solid #eeeeee;
+	background-color: var(--background-color-portfolio);
+	color: var(--color-portfolio-btn);
+	padding: 20px 24px;
+	border: 1px solid #eeeeee;
+    flex-grow: 1;
+	
+}
+
+.products-img {
+	width: 100%;
 }
 
 .product-main {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    margin-bottom: 4px;
-    letter-spacing: 0.06em;
-    color: var(--color-text-products);
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	margin-bottom: 4px;
+	letter-spacing: 0.06em;
+	color: var(--color-text-products);
 }
 
 .product-card {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.88;
-    color: var(--color-text-standart);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.88;
+	color: var(--color-text-standart);
 }
 
 .page-products {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-.products-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	// justify-content: center;
+	gap: 30px;
 }
 
-.product {
-    margin-right: 8px;
+.products-nav {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 8px;
+	row-gap: 15px;
+    
+
+	margin-bottom: 50px;
+	@media screen and (min-width: 480px) and (max-width: 767px) {
+		width: 326px;
+	}
+
+	@media screen and (min-width: 768px) {
+		align-items: center;
+		justify-content: center;
+	}
 }
+
+// .product {
+// 	// margin-right: 8px;
+// }
