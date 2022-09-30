@@ -32,9 +32,10 @@
 	line-height: 0;
 	width: 40px;
 	height: 40px;
+
 }
-.mobile-menu_close-btn:hover .mobile-menu_close-icon,
-.mobile-menu_close-btn:focus .mobile-menu_close-icon {
+.mobile-menu_close-btn:hover ,
+.mobile-menu_close-btn:focus {
 	fill: var(--color-accent);
 }
 
