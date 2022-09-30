@@ -939,6 +939,13 @@ body {
   gap: 60px;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .ftr {
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 @media screen and (min-width: 1200px) {
   .ftr {
     align-items: baseline;
@@ -995,6 +1002,14 @@ body {
   align-items: center;
   padding: 10px 28px;
   gap: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 1200px) {
+  .form-footer-btn {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 .form-footer-input:focus {
@@ -1042,6 +1057,7 @@ body {
 
 .form-footer {
   text-align: center;
+  width: 100%;
 }
 @media screen and (min-width: 1200px) {
   .form-footer {
